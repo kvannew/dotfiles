@@ -11,7 +11,7 @@ FONT="JetBrainsMono Nerd Font"
 
 # Bar Appearance
 bar=(
-  color=0x6624273a
+  color=0x9624273a
   # color=$TRANSPARENT
   position=bottom
   topmost=off
@@ -25,7 +25,7 @@ bar=(
   y_offset=2
   blur_radius=10
   notch_width=0
-  corner_radius=9
+  corner_radius=14
 )
 
 # Item Defaults

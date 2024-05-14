@@ -31,7 +31,9 @@ update_icons() {
                               label.highlight=$SELECTED          \
                               background.color=$BACKGROUND_COLOR \
                               icon.padding_left=$PADDING         \
-                              label.padding_right=$PADDING
+                              label.font.size=12                   \
+                              label.padding_right=$PADDING        \
+                              background.corner_radius=8
                               # label.color=$LABEL_COLOR \
 }
 
@@ -51,12 +53,14 @@ create_label() {
     BADGE="$(set_badge $APP)"
     # Add app name for currently focused app
     if [[ "$APP" == "$CURRENT_APP" ]]; then
-      LABEL+=" $APP"
+      LABEL+="  $APP"
     # For unfocused apps…
     else
       # Add a space if there is a badge
       if [[ $BADGE ]]; then
         LABEL+=" "
+      else
+        LABEL+="  "
       fi
     fi
     # Add badge

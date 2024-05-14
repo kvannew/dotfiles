@@ -38,7 +38,7 @@ yabai -m mouse_drop_action swap
 
 yabai -m config window_topmost              off
 yabai -m config window_opacity              on
-yabai -m config window_shadow               float
+yabai -m config window_shadow               off
 
 function setup_space {
   local idx="$1"
@@ -75,8 +75,8 @@ yabai -m rule --add app="^NBIA Data Retriever$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
-yabai -m rule --add app="^Alacritty$" manage=off  grid=6:4:1:1:2:4
-#yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^WezTerm$" manage=off  grid=6:4:1:1:2:4
+yabai -m rule --add app="^Finder$" manage=off
 yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 # Notify sketchybar when space changes
 yabai -m signal --add event=window_title_changed action="sketchybar --trigger title_change" 

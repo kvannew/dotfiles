@@ -5,8 +5,7 @@ FRONT_APP_SCRIPT='sketchy_topbar --set $NAME label="$INFO"'
 sketchy_topbar --add       event        window_focus                  \
            --add       event        windows_on_spaces             \
            --add       item         system.yabai left             \
-           --set       system.yabai script="$PLUGIN_DIR/yabai.sh" \
-                                    icon.font="$FONT:Bold:16.0"   \
+           --set       icon.font="$FONT:Bold:16.0"   \
                                     label.drawing=off             \
                                     icon.width=30                 \
                                     icon=$YABAI_GRID              \
@@ -27,3 +26,5 @@ sketchy_topbar --add       event        window_focus                  \
                                     associated_display=active     \
            --subscribe front_app    front_app_switched
 
+# system.yabai script="$PLUGIN_DIR/yabai.sh" \
+                                    
